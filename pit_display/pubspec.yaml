@@ -1,0 +1,37 @@
+name: pit_display
+description: 3015 Pit Display
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  window_manager: ^0.3.1
+  tuple: ^2.0.1
+  visibility_detector: ^0.3.3
+  webview_windows: ^0.2.2
+  fl_chart: ^0.61.0
+  messagepack: ^0.2.1
+  msgpack_dart: ^1.0.1
+  web_socket_channel: ^2.3.0
+  http: ^0.13.5
+  shared_preferences: ^2.0.18
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/highrise.png
