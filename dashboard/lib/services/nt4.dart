@@ -143,7 +143,7 @@ class NT4Client {
   }
 
   void _wsUnsubscribe(NT4Subscription sub) {
-    _wsSendJSON('unsibscribe', sub._toUnsubscribeJson());
+    _wsSendJSON('unsubscribe', sub._toUnsubscribeJson());
   }
 
   void _wsPublish(NT4Topic topic) {
