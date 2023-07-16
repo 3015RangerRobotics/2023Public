@@ -13,6 +13,8 @@ class NT4Client {
   final VoidCallback? onConnect;
   final VoidCallback? onDisconnect;
 
+  final int _startTime = DateTime.now().microsecondsSinceEpoch;
+
   Map<int, NT4Subscription> _subscriptions = {};
   int _subscriptionUIDCounter = 0;
   int _publishUIDCounter = 0;
@@ -115,7 +117,7 @@ class NT4Client {
   }
 
   int _getClientTimeUS() {
-    return DateTime.now().microsecondsSinceEpoch;
+    return DateTime.now().microsecondsSinceEpoch - _startTime;
   }
 
   int _getServerTimeUS() {
